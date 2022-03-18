@@ -12,4 +12,4 @@
 ### BaekJoon 💎
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456)](https://solved.ac/zbqlr456)
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=black&height=100&section=footer)
