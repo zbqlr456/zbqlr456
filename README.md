@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=black&height=70px&section=header&text=안녕하세요%20김응철이에요😊&fontSize=40)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gray&height=70px&section=header&text=안녕하세요%20김응철이에요😊&fontSize=40)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <div align = "center">
