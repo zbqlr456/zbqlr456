@@ -3,10 +3,8 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <div align = "center">
   
-  <div align="right">
   ### BaekJoon 💎
   [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456)](https://solved.ac/zbqlr456)
-  </div>
   
 ### EungChol 👨‍🦱
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzbqlr456&count_bg=%23181717&title_bg=%23181717&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=true)](https://github.com/zbqlr456)
