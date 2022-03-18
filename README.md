@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <div align = "center">
-<img align="right" scr="http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456"/
+<img align="right" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456"/>
 <!-- [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456)](https://solved.ac/zbqlr456) -->
   
 ### EungChol 👨‍🦱
