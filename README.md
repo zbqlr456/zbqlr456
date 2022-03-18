@@ -16,9 +16,9 @@
 
 
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=zbqlr456)](https://github.com/zbqlr456/github-readme-stats)-->
-
+<div align="right">
 ### BaekJoon 💎
 [![Solved.ac 프로필](<img align="right" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456"/>)](https://solved.ac/zbqlr456)
-
+</div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=white&height=100&section=footer)
