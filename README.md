@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=100px&section=header&text=hihihi&fontSize=500)
+![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=100px&section=header&text=hihihi&fontSize=50)
 ### EungChol 👨‍🦱
 <img src="https://img.shields.io/badge/Github-inactive?style=flat-square&logo=Github&logoColor=white"/></a>
 
