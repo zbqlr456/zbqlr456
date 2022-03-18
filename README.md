@@ -7,4 +7,4 @@
 <img src="https://img.shields.io/badge/SpringBoot-green?style=flat-square&logo=Spring&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Mysql-lightgray?style=flat-square&logo=Mysql&logoColor=white"/></a>
 
-###
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456)](https://solved.ac/zbqlr456)
