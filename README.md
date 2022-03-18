@@ -1,5 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100px&section=header&text=안녕하세요%20김응철이에요😊&fontSize=50)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### EungChol 👨‍🦱
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzbqlr456&count_bg=%23181717&title_bg=%23181717&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
