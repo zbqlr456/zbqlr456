@@ -2,7 +2,7 @@
 
 <div align = "center">
  
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=zbqlr456&show_icons=true&theme=darcula" weight="400"/>
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=zbqlr456&show_icons=true&theme=calm" weight="400"/>
 <!-- <img align="right" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456"/> -->
 <!-- [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=zbqlr456)](https://solved.ac/zbqlr456) -->
   
