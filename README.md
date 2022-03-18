@@ -1,4 +1,4 @@
-# 안녕하세요 김응철이에요 👋
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=10px&section=header&text=hihihi&fontSize=50)
 ### EungChol 👨‍🦱
 <img src="https://img.shields.io/badge/Github-inactive?style=flat-square&logo=Github&logoColor=white"/></a>
 
