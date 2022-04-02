@@ -17,6 +17,7 @@ public class Main_완전이진트리_9934 {
         for(int i=0;i<=depth;i++){
             tree[i] = new ArrayList<Integer>();
         }
+
         st = new StringTokenizer(br.readLine());
         for(int i=1;i<arr.length;i++){
             arr[i] = Integer.parseInt(st.nextToken());
