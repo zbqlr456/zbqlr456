@@ -21,7 +21,7 @@ public class Main_행성연결프림 {
         }
 
         minV[0] = 0;
-        int result = 0;
+        long result = 0;
 
         for (int i = 0; i < N; i++) {
             // 1. 신장트리에 포함되지 않은 정점 중 최소간선비용의 정점 찾기.
@@ -39,7 +39,7 @@ public class Main_행성연결프림 {
 
             // 2. 선택된 정점 기준으로 신장트리에 연결되지 않은 타 정점과의 간선 비용 최소로 업데이트
             for (int j = 0; j < N; j++) {
-                if (!visited[j] && map[minEdge][j] != 0 && minV[j] > map[minEdge][j]) { // 모두 비용을 갖고 있기 때문에 map[minEdge][j] != 0은 사실 필요 없음.
+                if (!visited[j] && minV[j] > map[minEdge][j]) { // 모두 비용을 갖고 있기 때문에 map[minEdge][j] != 0은 사실 필요 없음.
                     minV[j] = map[minEdge][j];
                 }
             }
