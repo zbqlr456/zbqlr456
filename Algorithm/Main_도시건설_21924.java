@@ -67,7 +67,6 @@ public class Main_도시건설_21924 {
 
         parents[bRoot] = aRoot;
         return true;
-
     }
 
 
