@@ -31,18 +31,7 @@ public class Main_톱니바퀴_14891 {
             st = new StringTokenizer(br.readLine());
             int num = Integer.parseInt(st.nextToken());
             int dir = Integer.parseInt(st.nextToken());
-            if(num == 1){
 
-            }
-            else if(num == 2){
-
-            }
-            else if(num == 3){
-
-            }
-            else if(num == 4){
-
-            }
 
         }
 

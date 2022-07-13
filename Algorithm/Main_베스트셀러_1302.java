@@ -18,7 +18,7 @@ public class Main_베스트셀러_1302 {
         }
         // str1이 사전순으로 str2보다 앞에있으면 음수를 반환
         int max = 0;
-        String result = "z";
+        String result = "a";
         for (String key : bookList.keySet()) {
 
             if (bookList.get(key) > max || (bookList.get(key) == max && key.compareTo(result) < 0)) {
