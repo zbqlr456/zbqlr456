@@ -6,6 +6,7 @@ public class Main_문자열게임2_20437 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int T = Integer.parseInt(br.readLine());
+        int[] a = new int[26];
 
         for (int t = 0; t < T; t++) {
             char[] w = br.readLine().toCharArray();
@@ -16,10 +17,21 @@ public class Main_문자열게임2_20437 {
                 continue;
             }
 
+            for(char c : w){
+                a[c - 'a']++;
+            }
+
+//            for(int r : a){
+//                System.out.print(" " + r);
+//            }
+
             int min = Integer.MAX_VALUE;
             int max = Integer.MIN_VALUE;
 
             for (int i = 0; i < w.length; i++) {
+                if(a[w[i]-'a'] < k)
+                    continue;
+
                 int cnt = 1;
                 int len = 1;
                 for (int j = i + 1; j < w.length; j++) {
