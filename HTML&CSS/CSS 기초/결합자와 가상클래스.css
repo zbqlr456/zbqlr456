@@ -1,0 +1,57 @@
+/* 자손 결합자 */
+/* outer의 자손 li를 스페이스로 구분 */
+.outer li {
+  color: olivedrab;
+}
+
+/* 1촌 자손 결합자 */
+/* >는 딱 바로 밑의 자식만 */
+.outer > li {
+  color: dodgerblue;
+}
+
+/* 1촌 자손의 자손 지정 */
+.outer > li li {
+  text-decoration: underline;
+}
+
+/* ~은 뒤따르는 모든 동생 결합자들 */
+/* 형제들 중에 다음에 오는 모든 녀석들 */
+.starter ~ li {
+  font-style: italic;
+}
+
+/* +는 뒤따르는 바로 다음 동생 결합자만 */
+.starter + li {
+  font-weight: bold;
+}
+
+/* :을 붙여서 어떤 요소를 수식해주는 것을 가상 클래스라고 한다. */
+/* 첫 번째, 마지막 요소 가상 클래스 */
+ol li:first-child,
+ol li:last-child {
+  color: yellowgreen;
+}
+
+/* not을 붙여서 특정 가상 요소만 제외하고 CSS를 적용시킬 수도 있다 */
+.outer > li:not(:last-child) {
+  text-decoration: line-through;
+}
+
+ul:not(.outer) li {
+  font-weight: bold;
+}
+
+/* X번째 요소 가상 클래스 */
+/* nth-child(x)로 n번째 요소를 지정할 수 있다 */
+/* #,#n,#n+#,odd, even으로 설정해 줄 수도 있다 */
+ol li:nth-child(odd) {
+  font-weight: bold;
+  color: deeppink;
+}
+
+/* hover는 마우스가 올라간 상태에 보여줄 CSS */
+li:hover {
+  font-weight: bold;
+  color: blue;
+}
