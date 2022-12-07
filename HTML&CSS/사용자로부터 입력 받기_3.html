@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 긴 text를 받아올 때 사용하는 태그 -->
+    <!-- cols를 통해 한줄에 입력할 수 있는 글자 수 설정 -->
+    <!-- rows를 통해 한창에 얼마나 보여줄 수 있는지 설정 -->
+    <!-- resize를 통해 rows에 상관없이 크기 조정을할 수 있음 -->
+    <h1>textarea 태그</h1>
+
+    <label for="message">메시지를 입력하세요.</label> <br />
+    <textarea
+      id="message"
+      resize="none"
+      cols="64"
+      rows="5"
+      placeholder="본문을 입력하세요."
+    ></textarea>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h1>옵션들을 사용하는 태그</h1>
+
+    <h2>select, option 태그</h2>
+
+    <label for="lang">언어</label> <br />
+    <!-- select 태그는 option 자식태그들을 두고 선택창을 설정 -->
+    <!-- multiple 속성으로 다중선택이 가능하게 할 수 있다 -->
+    <select id="lang">
+      <!-- value로 실제 보내지는 데이터 설정 -->
+      <option value="">-- 언어 선택 --</option>
+      <!-- selected로 기본 설정 option을 정할 수 있다 -->
+      <option value="html" selected>HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">자바스크립트</option>
+      <option value="ts">타입스크립트</option>
+    </select>
+
+    <br /><br />
+
+    <h2>optgroup 태그</h2>
+
+    <label for="shopping">쇼핑 목록</label> <br />
+    <select id="shopping">
+      <!-- optgroup으로 option을 그룹화할 수 있다 -->
+      <optgroup label="과일">
+        <option value="f_apl">사과</option>
+        <option value="f_grp">포도</option>
+        <option value="f_org">오렌지</option>
+      </optgroup>
+      <optgroup label="채소">
+        <option value="v_crt">당근</option>
+        <option value="v_tmt">토마토</option>
+        <option value="v_ept">가지</option>
+      </optgroup>
+      <optgroup label="육류">
+        <option value="m_bef">소고기</option>
+        <option value="m_prk">돼지고기</option>
+        <option value="m_ckn">닭고기</option>
+      </optgroup>
+    </select>
+
+    <br /><br />
+
+    <h2>datalist 태그</h2>
+    <!-- 태그 자체는 text 타입이다. -->
+    <label for="job">현재 직업</label> <br />
+    <input id="job" list="jobs" />
+    <!-- list 속성과 datalist 태그의 id를 연결하여 사이트를 만든사람이 권장하는 입력지를 option 태그로 설정해서 보여지게 할 수 있다.-->
+    <datalist id="jobs">
+      <option value="학생"></option>
+      <option value="디자이너"></option>
+      <option value="퍼블리셔"></option>
+      <option value="개발자"></option>
+    </datalist>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h1>정도를 표현하는 태그</h1>
+
+    <!-- progress 태그: 정도를 나타내는 바를 표현 -->
+    <!-- max 속성으로 최대치를 설정할 수 있음 -->
+    <!-- 무언가 동적으로 타나내는 값을 표현하기 위한 태그이기 때문에 js와 함께 연동하는 것이 중요함 -->
+    <h2>progress 태그</h2>
+    <progress id="progressBar" max="100">0%</progress>
+    <button id="prgStartBtn" type="button">시작</button>
+
+    <br /><br />
+
+    <!-- meter 태그: 고정되어 있는 수치를 시각적으로 보여줄 때 사용(캐릭터의 능력치) -->
+    <!-- low와 high를 통해 전체 범위를 3등분하는 두 수치를 설정하고 -->
+    <!-- optimum을 통해 이상적인 값을 설정할 수 있다. optimum과 가까우면 초록색, 조금 멀면 노랑, 아주 멀면 빨강색으로 표시한다 -->
+    <!-- value를 통해 실제 값을 포현한다. -->
+    <h2>meter 태그</h2>
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="80">
+      80달러
+    </meter>
+
+    <br />
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="10" value="80">
+      80달러
+    </meter>
+
+    <br />
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="20">
+      20달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="50">
+      50달러
+    </meter>
+
+    <meter min="0" max="100" low="33" high="67" optimum="90" value="80">
+      80달러
+    </meter>
+  </body>
+</html>
