@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://showcases.yalco.kr/html-css/01-06/table.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- table 태그: 표 넣는태그 -->
+    <!-- tr,td: table-row, table-data -->
+    <!-- table은 레이아웃에 절대 쓰지말고 표에만 사용할 것! -->
+
+    <!-- table>caption+(tr>td*3)*3 -->
+    <table>
+      <caption>
+        1에서 9까지의 숫자들
+      </caption>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- thead 태그: 테이블의 헤더 부분 -->
+    <!-- tbody 태그: 테이블의 본문 부분 -->
+    <!-- tfoot 태그: 테이블의 푸터 부분 -->
+    <!-- th 태그: scope 속성으로 row, col로 어떤 것의 머리가 될지 선택 -->
+
+    <!-- table>caption+(thead>tr>th*4)+(tbody>(tr>(th+td*3))*3)+tfoot>(tr>th+td*3) -->
+    <table>
+      <caption>
+        웹개발 공부 기록
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">과목</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">HTML</th>
+          <td>60분</td>
+          <td>60분</td>
+          <td>0분</td>
+        </tr>
+        <tr>
+          <th scope="row">CSS</th>
+          <td>0분</td>
+          <td>30분</td>
+          <td>60분</td>
+        </tr>
+        <tr>
+          <th scope="row">JS</th>
+          <td>0분</td>
+          <td>0분</td>
+          <td>60분</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">총 시간</th>
+          <td>60분</td>
+          <td>90분</td>
+          <td>120분</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <!-- colspan 속성은 열 병합, rowcpan은 행 병합 -->
+    <table>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td colspan="2" rowspan="2">4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- colgroup 태그: 표에 열을 묶어서 속성 부여, caption 바로 뒤에 -->
+    <!-- col 태그: 열의 묶음 -->
+
+    <table>
+      <colgroup>
+        <col class="weekend" />
+        <col span="5" />
+        <col class="weekend" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">일</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+          <th scope="col">토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
