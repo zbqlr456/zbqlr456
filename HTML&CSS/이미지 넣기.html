@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- img 태그: 이미지 넣을 때 사용 -->
+    <!-- src에 주소, alt에 부연 설명(추후 이미지 손설일 경우 보여줍니다.) -->
+    <!-- title 속성에 마우스를 올려놓았을 때 보여주는 문장 넣기 -->
+    <!-- alt없이 title을 넣거나 alt와 같은 내용을 title에 넣지 않는게 좋습니다. -->
+    <!-- src="./images/coding.png"로 상대경로로 표시할 수도 있습니다. -->
+    <!-- width, height 속성으로 픽셀 단위의 정수로 크기를 지정할 수 있습니다. -->
+    <!-- width, height 중 하나의 속성만 주면 비율유지 -->
+    <img
+      src="https://showcases.yalco.kr/html-css/01-05/coding.png"
+      alt="노트북 이미지"
+      title="프로그래밍"
+      width="900"
+      height="500"
+    />
+
+    <!-- img뒤에 map이라는 태그를 줘서 사이트 링크를 달 수가 있는데 거의 안쓰입니다. -->
+    <!-- image-map.net 이라는 사이트에서 map을 쉽게 부여할 수 있습니다. -->
+    <img
+      src="https://showcases.yalco.kr/html-css/01-05/map.png"
+      alt="맵"
+      usemap="#image-map"
+    />
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt="Google"
+        title="Google"
+        href="https://www.google.com"
+        coords="141,140,96"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Apple"
+        title="Apple"
+        href="https://www.apple.com"
+        coords="332,50,510,227"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Microsoft"
+        title="Microsoft"
+        href="https://www.microsoft.com"
+        coords="650,51,598,139,650,229,751,228,802,141,753,52"
+        shape="poly"
+      />
+    </map>
+  </body>
+</html>
