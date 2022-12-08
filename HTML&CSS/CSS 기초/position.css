@@ -1,0 +1,35 @@
+/* position 속성은 요소들이 화면에 어떻게 배치될지를 지정 */
+/* position 속성은 자식 요소에게 대물림되지 않음(font-size는 무보가 2em이면 자식도 2em이 됨) */
+/* static은 기본값으로, 전적으로 페이지의 흐름을 따르며 top, bottom, left, right, z-index 속성의 영향을 받지 않는다 */
+/* relative 값은 원래 위치를 기준으로 top ~ right 속성값이 적용됨. 요소의 위치는 이동하지만 요소가 차지하는 공백의 위치는 유지됨 */
+/* absolute 값은 static이 아닌 첫 부모 요소를 기준으로 top ~ right을 사용하여 위치를 조정할 수 잇음. 요소는 페이지의 문서 흐름에서 벗어나, 자리를 차지하지 않게 된다 */
+/* sticky는 요소가 스크롤로 이동할 수 있는 공간을 top ~ right 속성으로 제한할 수 있다 */
+
+body {
+  margin: 0;
+}
+
+.center {
+  z-index: 1;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: skyblue;
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 150px);
+}
+
+/* z-index 속성은 static이 아닌 요소들간 위아래 배치 순서를 지정 */
+/* auto는 0과 같으며, 같은 값의 요소들 중에는 나중에 배치된 것이 위로 올라옴 */
+.zindex {
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: tomato;
+  position: fixed;
+  top: calc(52%);
+  left: calc(50%);
+}
