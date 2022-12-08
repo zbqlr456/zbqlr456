@@ -1,0 +1,29 @@
+/* Block 요소는 딱딱한 상자와도 같다. 사각형의 형태를 갖고 있으며 너비와 높이, 안팎의 간격을 부여받을 수 있다. */
+
+/* inline 요소는 비닐이라 랩 안에 내용물을 넣은 것과도 같다. 일정한 바깥 형태나 껍데기 없이 페이지의 흐름에 따라 다른 텍스트나 컨텐츠와 어우러져 배치된다. */
+
+/* inline 요소는 width와 height과 상관없이 컨텐츠의 크기만큼 차이 */
+/* block 요소는 가로공간을 독점함 */
+/* inline-block은 기본너비는 컨텐츠만큼 차지하고 width와 height 설정에 적용 받으며 가로 공간을 독점하지 않음 */
+
+/* inline요소는 margin과 padding을 가로만 적용받고 padding의 세로는 배경색만 적용받는다 */
+/* block과 inline-block은 margin과 padding을 모두 적용받는다 */
+/* 단 block의 margin은 붙어있는 block 요소끼리는 상하가 상쇄된다(겹쳐진다) */
+
+span,
+div {
+  width: 240px;
+  height: 100px;
+}
+span {
+  background-color: tomato;
+}
+div {
+  background-color: steelblue;
+  display: inline-block;
+}
+
+#menu > li {
+  margin-right: 2em;
+  display: inline-block;
+}
