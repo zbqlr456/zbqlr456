@@ -1,0 +1,30 @@
+/* 배경에 이미지 넣기 */
+/* background-image, background-repeat, background-position, background-size가 있다 */
+/* background-size의 contain은 이미지를 div에 딱 포함시키고 cover은 div에 꽉 채운다 */
+
+.outer {
+  width: 400px;
+  height: 400px;
+  background-color: #eee;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.with-bg {
+  height: 100%;
+  background-image: url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  background-size: cover;
+}
+
+/* 배경에 그라데이션 넣기 */
+
+.gradation {
+  width: 400px;
+  height: 400px;
+  margin: 40px 0 0 0;
+  background: linear-gradient(217deg, red, transparent 70%),
+    linear-gradient(127deg, lime, transparent 70%),
+    linear-gradient(336deg, blue, transparent 70%);
+}
