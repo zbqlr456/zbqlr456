@@ -1,0 +1,17 @@
+/* block과 inline-block은 width와 height로 크기를 조절할 수 있다 */
+/* 부모의 길이에 상대적인 % */
+/* 뷰포트(viewport) 너비와 높이의 1/100 단위이 vw와 vh */
+/* 가로와 세로의 길이 중 더 긴것의 1/100단위는 vmax, 더 짧은 것을 기준으로한 1/100 단위는 vmin */
+/* 텍스트가 한줄일 경우 height와 line-height를 똑같이하면 텍스트 가운데 정렬 */
+/* 40vmin이면 더 짧은 괄호의 40/100을 의미 */
+
+div {
+  color: white;
+  background-color: slateblue;
+  width: 40vmin;
+  height: 500px;
+  line-height: 500px;
+  text-align: center;
+}
+
+/* max-width, min-width, max-height, min-height으로 최대 최소 넓이, 높이를 정해놓을 수 있다. 이렇게 정해놓은 최대 길기는 부모의 길이만큼 확장 가능하고, 부모의 크기가 min보다 더 줄어들어도 그 크기를 유지한다. */
