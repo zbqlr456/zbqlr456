@@ -1,0 +1,54 @@
+/* margin은 border 기준으로 바깥쪽, padding은 border 기준으로 안쪽 */
+/* 값을 하나만 주면 네방향 공통 */
+/* 두개로 주면 상하, 좌우 */
+/* 값을 세개를 주면 상, 좌우, 하 */
+/* 값을 네개를 주면 상,우,하,좌 */
+/* 자식의 margin은 부모의 밖으로 나갈 수가 있음 */
+/* div1과 div2 사이의 공간은 margin 48px이 아니라 24px만큼임. block 요소는 margin의 위아래는 서로 상쇄되기 때문*/
+.result {
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.outer {
+  background-color: beige;
+}
+.div_1 {
+  margin: 24px;
+  padding: 16px;
+  background-color: lightblue;
+}
+.div_2 {
+  /* display: none; */
+  margin: 24px;
+  padding: 16px;
+  background-color: lightpink;
+}
+p {
+  margin: 1em 0;
+}
+
+.special {
+  background-color: lightblue;
+  margin: 24px;
+  padding: 24px;
+}
+
+.special:nth-of-type(2) {
+  margin-top: 48px;
+  /* margin-bottom: 50px; */
+  /* margin-left: 50px; */
+  /* margin-right: */
+
+  /* padding-top */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-right */
+}
