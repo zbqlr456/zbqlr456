@@ -1,0 +1,43 @@
+/* border 속성을 사용하면 요소에 테두리를 줄 수 있다 */
+/* 선의 굵기와 스타일, 색상 등 다양한 값을 줄 수 있다 */
+/* box-sizing 속성을 너비와 높이 값에 padding과 border 값을 포함시킬지를 결정 */
+/* border-radius 속성을 모서리를 둥굴게 */
+ul > li:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+/* overflow 속성은 부모 요소보다 높이나 너비가 큰 자식 요소를 나타내는 방법을 지정 */
+/* overflow에 x,y 축 값을 함께주거나 overflow-x, overflow-y 처럼 따로 지정하는 것도 가능 */
+/* auto, visible, hidden, scroll 방식이 있음*/
+/* 한쪽만 visible이면 auto처럼 작동함 */
+.of-parent {
+  width: 300px;
+  height: 200px;
+  background-color: rosybrown;
+  border: 1px solid black;
+  overflow: auto;
+  margin: 10px;
+}
+.of-child {
+  width: 200px;
+  height: 300px;
+  background-color: aquamarine;
+  border: 1px solid tomato;
+}
+
+/* box-shadow로 박스 요소에 그림자를 줄 수 있음 */
+/* text-shadow에 spread 값과 inset 여부가 추가된 형식 */
+/* inset 여부, offset-x, offset-y, blur-radius, spread-radius, color 순으로 속성 지정 */
+
+.box-shadow {
+  width: 400px;
+  height: 300px;
+  box-shadow: 10px 10px 1em gray;
+}
