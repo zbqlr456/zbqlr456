@@ -1,0 +1,77 @@
+/* -------------------------flex 컨테이너의 속성들------------------------- */
+
+/* block 요소의 display를 flex로 지정하면 플렉스 방식으로 자식 요소들을 배치하게 된다 */
+/* inline-flex는 해당 (부모)컨테이너 요소를 인라인으로 만든다는 차이가 있음*/
+
+/* flex-direction은 내부 요소(아이템)들을 어느 축(가로, 세로)을 기준으로 할 건지 설정하고 row(기본값), column, reverse 등 설정 값에 따라 justify-content, align-items, align-content 등의 속성들이 작용할 방향이 결정 됨*/
+
+/* flex-wrap은 내부 요소의 갯수 X 길이가 컨테이너를 넘어갈 때 이들을 여러 줄에 걸쳐 나열할지 여부를 결정(wrap or nowrap) */
+
+/* justify-content는 메인 축(flex-direction에 의해 결정 됨)에서 아이템들을 정렬할 방식을 정함. flex-start(end)는 row,column(reverse)의 영향을 받는다는 점에서 start(end)와 다르다. flex-가 붙은 것을 사용할 것 */
+
+/* align-items는 수직 축(메인 축의 반대)에서 아이템들을 정렬할 방식을 정한다. wrap으로 아이템이 여러 줄이 되면 align-content를 사용해서 보다 다양한 방식으로 정렬할 수 있다*/
+
+/* gap 속성으로는 아이템 간에 간격을 줄 수 있으며 두 개의 값을 넣어서 가로 간격과 세로 간격을 다르게 지정하는 것도 가능 gap: 1em 0; */
+
+/* ---------------------flex 컨테이너 안 아이템의 속성들--------------------- */
+
+/* flex-basis는 메인 축상의 길이로, 컨테이너의 flex-direction 값에따라 너비 또는 높이값으로 작용. 기본값은 auto */
+/* flex-grow는 빈 공간을 채울지 여부, 그리고 채울 시 다른 아이템들의 동 속성값에 비례해서 공백을 나눠갖는다. 기본값은 0 */
+/* flex-shrink 속성은 전체 공간이 부족할 때, 해당 아이템의 길이가 컨텐츠 너비 또는 flex-basis로 지정한 값보다 작아질 수 있을지를 지정한다. 기본값은 1이며 증가할수록 길이가 많이 줄어든다. 0으로 해놓으면 넓이는 안줄어듬*/
+
+/* 위 속성들은 flex 속성으로 한 줄에 나타낼 수 있다. */
+/* flex:(flex-grow 값)(flex-shrink 값)(flex-basis 값) */
+
+/* --------------------------------order 속성-------------------------------- */
+
+/* flex 컨테이너의 아이템들을 order 속성을 사용해서 순서를 임의로 변경할 수 있다, 숫자가 특정되어 있지 않다면 (기본값 0) 코드에 작성된 순서대로 나열 됨 */
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  flex-basis: 100px;
+  align-items: flex-end;
+  padding: 12px;
+  background-color: dodgerblue;
+  gap: 12px;
+  text-align: center;
+}
+
+#header > * {
+  background-color: yellow;
+  padding: 12px 0;
+}
+
+#header > *:first-child {
+  flex-basis: 100px;
+}
+
+#header > *:last-child {
+  flex-grow: 1;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#content {
+  padding: 24px;
+  background-color: skyblue;
+}
+
+#footer {
+  flex-basis: 60px;
+  background-color: tomato;
+}
