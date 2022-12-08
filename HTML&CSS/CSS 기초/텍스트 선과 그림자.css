@@ -29,3 +29,13 @@ u {
 #ts {
   text-shadow: 3px 3px 4px deepskyblue;
 }
+#complex-shadow {
+  /* 위 아래 왼쪽 오른쪽 대각선까지 8개 그림자 */
+  text-shadow:
+    /* 안쪽 흰색 그림자 */ 1px 0 white, -1px 0 white, 0 1px white,
+    0 -1px white, 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white,
+    /* 바깥쪽 미국자두색 그림자 */ 2px 0 plum, -2px 0 plum, 0 2px plum,
+    0 -2px plum, 2px 1px plum, -2px 1px plum, 1px 2px plum, 1px -2px plum,
+    2px -1px plum, -2px -1px plum, -1px 2px plum, -1px -2px plum, 2px 2px plum,
+    2px -2px plum, -2px 2px plum, -2px -2px plum;
+}
