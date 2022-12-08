@@ -1,0 +1,32 @@
+#ta {
+  /* text-align 속성은 텍스트의 정렬 방식을 지정 */
+  /* jestify는 왼쪽으로 정렬하면서, 텍스트가 여러줄이 될 때 마지막 줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간은 조절하는 속성(word의 양쪽 맞춤) */
+  /* left, center, right, justify */
+  text-align: justify;
+
+  letter-spacing: 1px;
+  word-spacing: 0.5em;
+  line-height: 1.5em;
+}
+
+/* text-indent는 들여쓰기를 조절 */
+#ti {
+  text-indent: 2em;
+}
+
+ul {
+  list-style: circle;
+}
+
+/* list-style 속성으로 ul과 ol 목록의 불릿, 숫자 스타일을 지정할 수 있음 */
+/* 기호, 서수, 원하는 문자, 이미지까지 설정할 수 있고 none 값을 통해 아무것도 안보이게 할 수도 있다*/
+/* li별로 지정하는 것도 가능 */
+ul > li:first-child {
+  list-style: '🚩 ';
+}
+ul > li:last-child {
+  list-style: url(https://showcases.yalco.kr/html-css/02-03/yalco.png);
+}
+ol {
+  list-style: lower-alpha;
+}
