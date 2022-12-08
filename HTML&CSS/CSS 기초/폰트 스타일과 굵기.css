@@ -1,0 +1,19 @@
+/* font-style */
+/* 글자를 기울일 때 사용 */
+/* italic은 기울여서 쓴 서체 */
+/* oblique는 본래 서체를 기울인 것 */
+#italic {
+  font-style: italic;
+}
+#oblique {
+  font-style: oblique;
+}
+
+/* font-weight */
+/* 글자의 긁기를 조절 */
+#italic {
+  font-weight: bold;
+}
+#oblique {
+  font-weight: 500;
+}

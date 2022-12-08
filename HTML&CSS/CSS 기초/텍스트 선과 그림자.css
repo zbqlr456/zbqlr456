@@ -1,0 +1,31 @@
+/* text-decoration 속성은 밑줄, 취소선, 물결선 등으로 글을 꾸며주는데 사용 */
+/* 선의 형태, 색, 굵기 등 디테일을 지정할 수도 있음 */
+#underline {
+  text-decoration: underline;
+}
+#lth {
+  text-decoration: dashed line-through;
+}
+#threeline {
+  text-decoration: underline line-through overline;
+}
+#important {
+  text-decoration: underline tomato wavy 4px;
+}
+u {
+  text-decoration: underline wavy;
+}
+
+/* text-transform 속성은 알파벳의 대소문자 표시에 사용 */
+#upper {
+  text-transform: uppercase;
+}
+#cap {
+  text-transform: capitalize;
+}
+
+/* text-shadow는 텍스트에 그림자를 줄 수 있음 */
+/* 'x좌표, y좌표, 흐림(선택), 색' 형식으로 그림자를 넣을 수 있고 쉼표로 구분해서 여럿을 넣을 수도 있음*/
+#ts {
+  text-shadow: 3px 3px 4px deepskyblue;
+}
