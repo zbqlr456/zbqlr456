@@ -1,0 +1,31 @@
+/* Vendor Prefixes */
+/* 아직 표준화 되지 않았거나 신기능이어서 사용자의 브라우저가 이 기능을 지원하지 않을 수도 있을 때 브라우저 별로 접두사를 붙여서 따로 지정해줌 */
+/* 요즘은 최신기능이 바로바로 업데이트 되기 때문에 쓰는 것이 맞는지 의견이 분분 */
+/* Autoprefixer 사이트에서 자동으로 접두사를 붙여줌 */
+
+/* -webkit- 사파리, 크롬, 오페라에서 쓰임 */
+/* -moz- 파이어폭스 */
+/* -ms- 엣지, 익스플로러 */
+/* -o- 구버전 오페라 */
+
+/* 순서가 중요! 접두가가 붙지 않은 것을 마지막에 두기 */
+.element {
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+.element {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -o-linear-gradient(top, white, black);
+  /* 표준화 된 코드 */
+  background: linear-gradient(to bottom, white, black);
+}
