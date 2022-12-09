@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'MyNotoSans';
+  src: url(./Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+  font-family: 'MyNotoSans';
+  font-weight: 100;
+  src: url(./Noto_Sans_KR/NotoSansKR-Thin.otf);
+}
+
+@font-face {
+  font-family: 'MyNotoSans';
+  font-weight: 300;
+  src: url(./Noto_Sans_KR/NotoSansKR-Light.otf);
+}
+
+@font-face {
+  font-family: 'MyNotoSans';
+  font-weight: 500;
+  src: url(./Noto_Sans_KR/NotoSansKR-Medium.otf);
+}
+
+@font-face {
+  font-family: 'MyNotoSans';
+  font-weight: 700;
+  src: url(./Noto_Sans_KR/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+  font-family: 'MyNotoSans';
+  font-weight: 900;
+  src: url(./Noto_Sans_KR/NotoSansKR-Black.otf);
+}
+
+/* font-family 속성 */
+/* 여러개의 글꼴을 지정해놓고 없으면 그 다음 순위 서체 사용 */
+/* 내가 나의 사이트에 이쁜 글씨체를 쓰고 싶어도 사용자의 컴퓨터에 그 글씨체가 없으면 적용이 안됨 */
+body {
+  font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum,
+    '돋움', sans-serif;
+}
+
+/* Web font(웹 폰트) */
+/* 이런 문제점을 해결하기 위해 서버에 저장된 서체를 사용자의 컴퓨터에서 사용할 수 있도록 한 것 */
+
+/* 1. 웹폰트 제공 서비스의 서버에서 그대로 가져와 사용 */
+/* 내 사이트에서 제공할 리소스를 다른데서 가져오기 때문에 그 곳 서버의 영향을 받을 수 가 있음 */
+
+#gfont {
+  /* 위에서 import 해온 서체의 url 링크덕분에 사용 가능 */
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 2. 서체도 나의 사이트에서 함께 제공하기 */
+/* 내 폴더 안에서 font-face로 지정한 것들을 가져와 사용. font-weight도 내가 지정해줬다.*/
+/* 지정하지 않는다면 굵기가 상세히 나오지 않음 */
+#mfont {
+  padding: 8px 24px;
+  font-size: 1.4em;
+  /* 폰트위 이름을 내가 정할 수 있다 */
+  font-family: 'MyNotoSans', 'sans-serif';
+}
