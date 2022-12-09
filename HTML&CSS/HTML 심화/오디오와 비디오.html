@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- svg(Scalable Vector Graphic)란? 픽셀로 찍어서 그리는게 아니라 좌표로 면과 선을 표현하여 그림. 벡터 그래픽 비교적 복잡하지 않은 도형, 그래픽을 표현하는데 유리 -->
+    <img
+      src="https://showcases.yalco.kr/html-css-scoop/03-05/yalco-y.svg"
+      alt="얄코 로고"
+    />
+    <svg
+      version="1.1"
+      id="layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 400 400"
+      style="enable-background: new 0 0 400 400"
+      xml:space="preserve"
+    >
+      <style type="text/css">
+        .st0 {
+          fill: #ff4e00;
+        }
+      </style>
+      <g>
+        <path
+          class="st0"
+          d="M295.77,139.85c-3.3-6.59-10.03-10.75-17.4-10.75h-60.52c-10.74,0-19.45,8.71-19.45,19.45
+		c0,10.74,8.71,19.45,19.45,19.45h21.62l-38.9,51.87l-62.25-82.99c-6.45-8.59-18.63-10.34-27.23-3.89
+		c-8.59,6.45-10.34,18.64-3.89,27.23l69.06,92.07l-65.1,86.79h-36.2V253.9c0-3.24-0.81-6.43-2.36-9.27l-23.99-44.21l23.99-44.2
+		c1.55-2.85,2.36-6.04,2.36-9.28V61.75h41.13c10.74,0,19.45-8.71,19.45-19.45s-8.71-19.45-19.45-19.45H55.5
+		c-10.74,0-19.45,8.71-19.45,19.45V142L9.39,191.14c-3.14,5.79-3.14,12.77,0,18.55l26.66,49.15v99.7c0,10.74,8.71,19.45,19.45,19.45
+		h60.58c3.71,0,7.13-1.09,10.08-2.89c4.68-0.84,9.07-3.29,12.15-7.39l155.62-207.49C298.35,154.32,299.06,146.44,295.77,139.85z"
+        />
+        <path
+          class="st0"
+          d="M391.29,191.14L364.63,142V42.3c0-10.74-8.71-19.45-19.45-19.45H284.6c-10.74,0-19.45,8.71-19.45,19.45
+		s8.71,19.45,19.45,19.45h41.13v85.19c0,3.24,0.81,6.43,2.36,9.27l23.98,44.2l-23.98,44.21c-1.55,2.85-2.36,6.03-2.36,9.27v85.18
+		H284.6c-10.74,0-19.45,8.71-19.45,19.45c0,10.74,8.71,19.45,19.45,19.45h60.58c10.74,0,19.45-8.71,19.45-19.45v-99.7l26.66-49.15
+		C394.43,203.91,394.43,196.92,391.29,191.14z"
+        />
+      </g>
+    </svg>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 오디오와 동영상 -->
+    <!-- controls은 제어 인터페이스로 플레이버트, 제어기 등을 나타내는 속성 -->
+    <!-- autoplay는 페이지에 들어가자마자 자동재생 될것인지 설정하는 속성. 요즘은 브라우저에서 자체적으로 막기도 해서 설정필요 -->
+    <!-- loop는 반복재생 할것인지 설정하는 속성 -->
+    <audio src="/Wooden Bat Dropped On Asphalt.mp3" controls></audio>
+
+    <!-- source 태그: -->
+    <!-- 환경과 브라우저마다 지원하는 형식의 미디어가 다르기 때문에, 지원하지 않는 미디어가 있을 때를 대비해 여러개의 source 파일을 넣어줘 다양한 옵션을 주기 위함 -->
+    <h1>2. <strong>source</strong> 태그를 사용한 링크</h1>
+    <br />
+
+    <figure>
+      <figcaption class="sr-only">얄코 영상 오디오</figcaption>
+      <audio controls>
+        <!-- 대안1 -->
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/audio.mp3"
+          type="audio/mpeg"
+        />
+        <!-- 대안2 -->
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/audio.wav"
+          type="audio/wav"
+        />
+        <!-- 지원되지 않았을 때를 대비해 audio나 video 태그 자체가 안먹을 때 보여지는 문구 -->
+        <p>이 브라우저에서 오디오 태그가 지원되지 않습니다.</p>
+      </audio>
+    </figure>
+  </body>
+</html>
