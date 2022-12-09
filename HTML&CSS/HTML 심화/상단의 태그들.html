@@ -1,0 +1,43 @@
+<!-- 문서가 어떤 형식과 버전으로 작성되었는지를 명시 = 최신형식의 html 파일로 작성되었음을 명시-->
+<!-- 선언치 standard mode(최신 형식)으로 문서 실행 -->
+<!-- 선언하지 않았을 경우 quirks mode(익플5, 네비게이터4 등 옛날 브라우저를 모방)로 문서 실행 -->
+<!DOCTYPE html>
+
+<!-- 검색엔진 같은데서 이 사이트가 어떤 언어로 되어있는지 알 수 있게하는 속성 -->
+<html lang="ko">
+  <!-- 메타데이터(기계가 읽을 정보)가 담기는 곳 -->
+  <!-- 페이지의 제목, 파비콘, 기타 메타 정보, CSS와 js등의 코드 및 링크 -->
+  <head>
+    <!-- 페이지가 어떤 문자로 작성되었는지를 명시(글자가 깨지지 않도록) -->
+    <!-- UTF-*은 전세계 거의 모든 문자를 표현할 수 있는(유니코드) 형식 -->
+    <meta charset="UTF-8" />
+
+    <!-- 이걸 읽는 브라우저가 IE일 경우 너가 아는 방식중에 최신방식(edge)으로 읽으라는 뜻(곧 없어질 듯)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- 시각적 viewport: 사람들에게 보여지는 영역, 레이아웃 viewport: 브라우저가 웹페이지를 그리는 영역 -->
+    <!-- viewport가 바뀌어도 시각적으로 알맞게 맞춰줌(컴퓨터와 모바일) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph 정보(Meta에서 만든 프로토콜) 다른 곳에 링크를 공유할 때 좋음 -->
+    <!-- 링크를 공유할 때 보여진 텍스트와 설명, 이미지를 설정해 놓음 -->
+    <meta property="og:title" content="얄코의 HTML & CSS 강좌" />
+    <meta
+      property="og:description"
+      content="얄코의 최신 강좌! 웹 개발을 위한 HTML과 CSS 지식들을 '떠먹여'드립니다."
+    />
+    <meta
+      property="og:image"
+      content="https://showcases.yalco.kr/html-css-scoop/03-01/yalco.png"
+    />
+
+    <!-- 파비콘 설정 -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 웹페이지의 제목 -->
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
