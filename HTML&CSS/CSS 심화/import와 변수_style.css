@@ -1,0 +1,28 @@
+/* sr-only를 숨기는 CSS를 import해서 사용할 수 있다 */
+@import url(https://showcases.yalco.kr/html-css-scoop/04-01/shared.css);
+@import url(./common.css);
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.not-good {
+  text-decoration: var(--not-good);
+}
+.wrong {
+  text-decoration: var(--wrong);
+}
+
+/* 스코프에 지정된 변수가 없을 경우 대안 값을 넣을 수도 있습니다. */
+u {
+  background-color: var(--warn, lightblue);
+}
+
+h1 {
+  font-size: var(--font-x-large);
+}
+p {
+  font-size: var(--font-large);
+  color: var(--color-text);
+}
