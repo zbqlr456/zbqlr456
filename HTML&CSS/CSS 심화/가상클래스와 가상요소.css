@@ -1,0 +1,127 @@
+/* --------------------가상클래스1-------------------- */
+/* hover, active, checked, enabled */
+/* 마우스오버 */
+a:hover {
+  background-color: yellow;
+}
+/* 클릭중 */
+a:active {
+  background-color: aqua;
+}
+
+/* 체크된 것 */
+input[type='radio']:checked + label {
+  color: tomato;
+  font-weight: bold;
+}
+/* 활성화된 것 */
+input[type='radio']:enabled + label {
+  text-decoration: underline;
+}
+/* 비활성화된 것 */
+input[type='radio']:disabled + label {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+/* --------------------가상클래스2-------------------- */
+/* focus, required, valid, focus-visible */
+/* 인풋 등이 클릭되어 포커스된(입력을 받는) 상태 */
+input[type='text']:focus {
+  /* outline은 border 밖의 선 (박스 요소가 아님) */
+  outline: 2px solid dodgerblue;
+}
+/* 필수 입력요소 */
+input:required {
+  border-color: orangered;
+}
+/* 값이 유효한 입력요소 */
+input[type='email']:valid {
+  border-color: green;
+}
+/* 값이 무효한 입력요소 */
+input[type='email']:not(:valid) {
+  border-color: purple;
+}
+
+/* 클릭했을 때 */
+[class*='focus']:focus {
+  outline: 2px solid deeppink;
+}
+
+.tab-focus:focus,
+.no-focus:focus {
+  outline: none;
+}
+
+/* 키보드 탭으로 포커스된 요소에 적용 */
+/* 위에서 ounline: none 설정해놔도 키보드로 이동할 땐 outline이 보이게 */
+/* 브라우저 지원 확인 */
+[class*='tab-focus']:focus-visible {
+  outline: 2px solid dodgerblue;
+}
+
+/* --------------------가상클래스3-------------------- */
+/* 부모 요소 내 첫 번째 ~요소 */
+b:first-of-type {
+  text-decoration: overline;
+}
+/* 부모 요소 내 마지막 ~요소 */
+i:last-of-type {
+  text-decoration: line-through;
+}
+/* 부모 요소 내 N번째 ~요소 */
+b:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+/* 부모 요소 내 유일한 ~요소 */
+div:only-of-type {
+  text-decoration: overline line-through underline;
+}
+/* 부모 요소 내 종류 무관 유일한 요소 (독자) */
+div:only-child {
+  text-decoration: wavy underline tomato;
+}
+
+/* ---------------------가상요소--------------------- */
+/* 코드에 없는 요소를 ::로 추가 */
+/* HTML과 CSS의 규칙에 구애받지 않고 원하는 위치에 요소를 추가할 수 있다 */
+
+/* ::after 끝쪽에 다음과 같은 스타일을 가진 요소 추가 */
+li.later::after {
+  content: '다음 강좌';
+  margin-left: 0.6em;
+  padding: 0.16em 0.36em;
+  font-size: 0.72em;
+  font-weight: bold;
+  color: white;
+  background-color: darkmagenta;
+  border-radius: 0.2em;
+}
+
+/* before은 바로 앞에 가상의 요소 추가 */
+li::before {
+  content: '';
+  display: inline-block;
+  margin: 0 0.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background-image: url(./check.png);
+  background-size: contain;
+}
+
+/* :: selection = 선택 영역 가상 요소 */
+.orange::selection {
+  background-color: orange;
+}
+.dark::selection {
+  color: lightgreen;
+  background-color: #222;
+}
+
+/* ::placeholder = 플레이스홀더 가상 요소 */
+input:required::placeholder {
+  color: darkred;
+  background-color: yellow;
+}
