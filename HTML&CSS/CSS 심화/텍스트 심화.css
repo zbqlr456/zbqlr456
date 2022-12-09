@@ -1,0 +1,56 @@
+/* 텍스트 심화 */
+/* vertical-align 속성 */
+/* 요소들을 세로로 정렬하는 속성 */
+/* text와 함께 inline에 들어있는 버튼이나 이미지요소에 적용되는 속성 */
+/* 1. inline 요소 안에서의 사용(block 요소에서는 사용 X) */
+span {
+  text-decoration: underline overline;
+}
+
+input[type='text'],
+button,
+img {
+  /* sub, super, text-top, text-bottom, middle, 수치 */
+  vertical-align: baseline;
+}
+
+/* table-cell 요소 안에서 사용 */
+
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0.5em 1em;
+  border: 1px solid gray;
+  /* middle, top, bottom, baseline */
+  vertical-align: middle;
+}
+
+/* white-space 속성 */
+
+div {
+  width: 400px;
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid gray;
+  word-spacing: 0.24em;
+  /* nomal, nowrap, pre, pre-wrap, pre-line, breack-spaces*/
+  /* normal width에 맞춰 컨텐츠가 알아서 줄바꿈 */
+  /* nowrap은 넓이 무시하고 쭉 옆으로 길어져 버림 */
+  /* pre는 페이지의 원본 모습 그대로를 보여줌 */
+  /* pre-wrap은 pre처럼 동작하되 넘어가지 않게 */
+  white-space: pre;
+}
+
+/* text-overflow 속성 */
+
+#ov {
+  /* 텍스트에 부족한 너비 */
+  width: 300px;
+  /* overflow가 hidden이고 white-space가 nowrap이어야 한다 */
+  overflow: hidden;
+  white-space: nowrap;
+  /* clip과 ellipsis가 있음 */
+  /* clip은 짤라버리고 ellipsis는 ... 이생겨 짤렸다는 것을 사용자들이 직관적으로 알 수 있게 해준다 */
+  text-overflow: ellipsis;
+}
