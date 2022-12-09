@@ -1,0 +1,32 @@
+/* 테이블 스타일링 */
+table {
+  width: 400px;
+  border: 2px solid gray;
+  border-spacing: 2px;
+
+  /* CSS 기본설정은 separate */
+  border-collapse: collapse;
+
+  /* 캡션의 위치 - top과 bottom */
+  caption-side: bottom;
+
+  /* auto일 때는 안의 텍스트의 길이에 따라 칸의 너비를 자동으로 조정. fixed일 때는 칸의 길이가 항상 같은 비율로 등분 */
+  table-layout: auto;
+}
+th,
+td {
+  padding: 0.4em 0.8em;
+  border: 2px solid lightgray;
+}
+
+/* table-layout이 fixed 일 때 원하는 칸의 길이를 조정하고 싶으면 이렇게 특정 지어서 길이를 조정할 수 있다 */
+colgroup > col:first-child {
+  width: 100px;
+}
+
+/* table 요소들의 display*/
+/* table의 display 기본설정은 table */
+/* tbody는 table-row-group */
+/* td,th는 table-cell */
+/* table의 display를 바꾸면 설정도 바뀐다. */
+/* table이 화면에 알맞게 표시되는건 그것에 맞는 속성들을 table이 갖고 있기 때문이다 */
