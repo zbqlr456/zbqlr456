@@ -1,0 +1,73 @@
+/* 상속되는 CSS 속성들 */
+/* color, letter-spacing, visibility, cursor, word-spacing, text-align, text-decoration, text-shadow, line-height, list-style 관련, font 관련 */
+
+/* inherit (상속) */
+.parent {
+  font-weight: bold;
+  color: slateblue;
+}
+.parent > div {
+  color: olivedrab;
+}
+
+/* last-child만 상속받은 color를 쓰겠다! */
+.parent > :last-child {
+  color: inherit;
+}
+
+/* initial */
+/* 속성의 초기값으로 돌아간다 */
+/* p의 display를 initial로 바꾸면 p가 block(브라우저가 설정한 속성)에서 원래 속성인 inline으로 돌아가게 된다.*/
+p:not(:first-child) {
+  display: initial;
+}
+
+/* unset */
+/* 자식 요소에 unset을 지정하면 부모의 값을 그대로 적용 */
+/* 상속받은 값이 없다면 initial로 작동 */
+.parent {
+  color: slateblue;
+}
+.parent > div {
+  color: olivedrab;
+}
+.parent :last-child {
+  color: unset;
+}
+
+p:not(:first-child) {
+  display: unset;
+}
+
+/* revert */
+/* unset과 같지만, 상속받지 않은 값을 초기값으로 되돌리지는 않는다. 좀 약한 unset*/
+.parent {
+  color: slateblue;
+}
+.parent > div {
+  color: olivedrab;
+}
+.parent :last-child {
+  color: revert;
+}
+
+p:not(:first-child) {
+  display: revert;
+}
+
+/* all */
+.parent {
+  color: slateblue;
+}
+
+button:not(:first-of-type) {
+  all: unset;
+}
+button:last-child {
+  padding: 0.6em 1em;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 0.4em;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.16);
+}
