@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 웹사이트를 만들 때 접근성을 높이는 방법 -->
+
+    <!-- 이미지에는 alt를 꼭 넣을 것 -->
+    <img src="Home" alt="홈으로" />
+
+    <!-- 의미 없는, 또는 읽을 필요 없는 이미지에도 공백의 alt 속성이라도 넣기 -->
+    <img src="shopping" alt="" />
+    장바구니에 담기
+
+    <!-- alt에 넣기 너무 긴 문장은 숨겨진 요소에 설명 넣기 -->
+    <img src="https://showcases.yalco.kr/html-css-scoop/03-02/sr-only.png" alt="" />
+    <!-- 아래의 css를 사용하여 숨길 수 있음 -->
+    <p class="sr-only">
+      노트북으로 뭔가 공부하고 있는 아이의 공백: 코딩을 배우면 아마 굶지는 않을거랬어
+    </p>
+    <!-- .sr-only {
+  position: absolute;
+  width: 1px; /* width를 0으로 하면 못 읽을 수도 있음 */
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+} -->
+
+    <!-- aria-label 속성으로 설명 넣기 -->
+    <div class="page-buttons">
+      <button aria-label="이전 페이지로">◀</button>
+      <button aria-label="1번째 페이지로 (현재 페이지)" class="current">1</button>
+      <button aria-label="2번째 페이지로">2</button>
+      <button aria-label="3번째 페이지로">3</button>
+      <button aria-label="4번째 페이지로">4</button>
+      <button aria-label="5번째 페이지로">5</button>
+      <button aria-label="다음 페이지로">▶</button>
+    </div>
+
+    <!-- aria-hidden 속성과 role 속성 -->
+    <div class="example"><span aria-hidden="true">😀</span> 반갑습니다!</div>
+    <p>
+      이모지나 SVG 요소 등을 스크린 리더에게만 감추고 싶다면 <br />
+      <strong>aria-hidden</strong> 속성을 <em>true</em>로 만들어줍니다.
+    </p>
+
+    <br />
+
+    <div class="example">I <span role="img" aria-label="love">❤️</span> CODING!</div>
+    <p>
+      특정 정보를 나타내는 이모지나 SVG 요소 등을 <br />
+      스크린 리더가 특정 텍스트로 읽도록 하려면 <br />
+      <strong>role</strong> 속성으로 이미지임을 명시하고 <br />
+      <strong>aria-label</strong> 속성에 값을 넣습니다.
+    </p>
+
+    <!-- 이미지나 아스키 아트 등의 미디어에 설명을 붙일 때 -->
+    <!-- <figure>안에 미디어와 <figcaption>을 같이 넣어 설명을 하는 방식도 많이 사용 됨 -->
+    <figure>
+      <img src="./sr-only.png" alt="" />
+      <figcaption class="sr-only">
+        노트북으로 뭔가 공부하고 있는 아이의 독백: 코딩을 배우면 아마 굶지는 않을거랬어.
+      </figcaption>
+    </figure>
+
+    <br />
+
+    <figure>
+      <pre>
+        ,d888a                          ,d88888888888ba.  ,88"I)   d
+      a88']8i                         a88".8"8)   `"8888:88  " _a8'
+    .d8P' PP                        .d8P'.8  d)      "8:88:baad8P'
+    ,d8P' ,ama,   .aa,  .ama.g ,mmm  d8P' 8  .8'        88):888P'
+    ,d88' d8[ "8..a8"88 ,8I"88[ I88' d88   ]IaI"        d8[         
+    a88' dP "bm8mP8'(8'.8I  8[      d88'    `"         .88          
+    ,88I ]8'  .d'.8     88' ,8' I[  ,88P ,ama    ,ama,  d8[  .ama.g
+    [88' I8, .d' ]8,  ,88B ,d8 aI   (88',88"8)  d8[ "8. 88 ,8I"88[
+    ]88  `888P'  `8888" "88P"8m"    I88 88[ 8[ dP "bm8m88[.8I  8[
+    ]88,          _,,aaaaaa,_       I88 8"  8 ]P'  .d' 88 88' ,8' I[
+    `888a,.  ,aadd88888888888bma.   )88,  ,]I I8, .d' )88a8B ,d8 aI
+    "888888PP"'        `8""""""8   "888PP'  `888P'  `88P"88P"8m"
+        </pre
+      >
+      <figcaption class="sr-only">코카콜라 로고를 표현한 아스키 아트</figcaption>
+    </figure>
+  </body>
+</html>
