@@ -1,0 +1,37 @@
+/* Grid 레이아웃 */
+/* flex 레아이웃과 비슷하게 부모 적용 속성과 자식 적용 속성이 나뉘어져 있다. */
+/* 2. 자식 적용 속성들 */
+body {
+  background-color: lightgray;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4픽션으로 1fr씩 나누어져 있음*/
+  grid-auto-rows: 160px;
+  padding: 1em;
+  gap: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: white;
+}
+.container > div {
+  padding: 1em;
+  text-align: center;
+  background-color: beige;
+}
+/* gird 설정에 따라서 영역이 겹칠 수도 있음 */
+.container > div:first-child {
+  background-color: rgba(30, 144, 255, 0.5);
+  grid-column: 1 / span 3; /* 컬럼의 몇번째 자리로 둘껀지. 1/span3은 1번자리에서 3개의 자리를 차지한다는 뜻. 1 / 4(1번줄부터 4번줄까지)도 같은 뜻. 반대방향은 -1 ~ -5*/
+  grid-row: 1 / 3;
+}
+.container > div:nth-child(2) {
+  background-color: rgba(255, 99, 71, 0.5);
+  grid-column: 1 / -1; /* 1 / -1은 끝에서 끝까지 */
+  grid-row: auto;
+}
+.container > div:nth-child(3) {
+  background-color: lightgreen;
+  justify-self: stretch;
+  align-self: stretch;
+}
