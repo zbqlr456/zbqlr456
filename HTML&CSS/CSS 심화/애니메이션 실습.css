@@ -1,0 +1,75 @@
+body {
+  margin: 36px;
+}
+button {
+  all: unset;
+  margin-bottom: 2em;
+  padding: 0 2em;
+  height: 64px;
+  line-height: 64px;
+  font-size: 1.2em;
+  color: white;
+  background-color: tomato;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#loading {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#loading > div {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#loading > div > div {
+  flex-grow: 1;
+}
+#loading > div > div:nth-child(odd) {
+  background-color: dodgerblue;
+}
+
+button._1:hover {
+  background-color: darkorchid;
+  border-radius: 32px;
+  transition: all 500ms;
+}
+
+@keyframes my-anim {
+  from {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(103%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+button._2:hover {
+  animation: my-anim 300ms;
+}
+
+#loading > div {
+  transform: skewX(-20deg);
+  animation: move-right;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move-right {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 0px;
+  }
+}

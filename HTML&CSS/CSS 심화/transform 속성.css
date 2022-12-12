@@ -1,0 +1,21 @@
+/* 변형과 애니메이션 */
+/* transform 속성은 주위 요소들에 영향을 끼치지 않으면서 요소의 모습을 바꾸고 none, scale(x,y), rotate(x,y), translate(x,y), skew(x,y) 등이 있다 */
+/* position: relative;인 요소에 position: absolute;를 가운데 정렬 하려면 top:50%, left:50%;를 한 후 transform: translate(-50%,-50%)를 이용해여 화면의 한가운데 요소를 넣을 수 있다. */
+.result > div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: lightblue;
+}
+.result > div:nth-of-type(2),
+.result > div:nth-of-type(7) {
+  width: 180px;
+}
+.result > div:nth-of-type(4),
+.result > div:nth-of-type(5) {
+  height: 180px;
+}
+.result > img {
+  vertical-align: top;
+  transform: scale(0.5, 0.5) translate(25%, 25%) rotate(45deg);
+}
