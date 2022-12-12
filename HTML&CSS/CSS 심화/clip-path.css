@@ -1,0 +1,45 @@
+/* clip과 clip-path 속성 */
+/* clip은 어느 부분이 시각적으로 보이도록 할지를 결정한다. absolute나 fixed 필수 */
+/* clip-path는 새로 나왔다. absolute나 fixed 필요 없다 */
+
+.result > div {
+  display: inline-block;
+  padding: 1.2em;
+  box-sizing: border-box;
+  background-color: skyblue;
+  vertical-align: top;
+  font-size: 0.9em;
+}
+.result > div:nth-of-type(2) {
+  width: 72px;
+  min-height: 380px;
+}
+.result > div:nth-of-type(3) {
+  width: 564px;
+  height: 72px;
+}
+#clipped {
+  width: 564px;
+  height: 380px;
+  background-color: bisque;
+  /* position: absolute;
+  clip: rect(50px, 400px, 200px, 50px); */
+  /* clip-path: circle(30%); */
+  /* clip-path: ellipse(200px 200px at 0 0); */
+  /* clip-path: ellipse(200px 300px at 20% 50%); */
+  clip-path: polygon(50% 0, 50% 100%, 100% 50%, 0 50%);
+}
+img {
+  width: 200px;
+  margin: 0 1.4em 1.4em 0;
+  float: left;
+}
+span {
+  font-size: 1.2em;
+}
+
+/* scroll-snap 속성 */
+
+/* aspect-ratio 속성 */
+
+/* backdrop-filter 속성 */
