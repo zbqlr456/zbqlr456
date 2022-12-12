@@ -1,0 +1,25 @@
+/* Grid 레이아웃 */
+/* flex 레아이웃과 비슷하게 부모 적용 속성과 자식 적용 속성이 나뉘어져 있다. */
+/* 1. 부모 적용 속성들 */
+.container {
+  padding: 0.8em;
+  /* min-height: 640px; */
+  background-color: lightgray;
+  display: grid;
+  /* grid-template-columns: 100px 200px 300px; or 30% 70%; 3fr 7fr;은 %랑 비슷하게 비례적으로 나누지만 fr은 container 안에 더 잘 넣어줌. repeat(5,1fr); 이라고 쓰면 1fr 5번쓴 효과. 이렇게 여러가지 방식으로 가능하고 여러 효과들을 혼합해서도 사용 가능.
+   */
+  /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+  /* gap: 1em; div 사이의 거리 조절*/
+  /* grid-auto-rows: auto; minmax(x,y) 지정해서 높이 조절 가능*/
+  /* justify-items: stretch; */
+  /* align-items: stretch; */
+}
+.container > div {
+  padding: 1em;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: slateblue;
+}
+.container > div > span {
+  display: none; /* inline으로 하면 span 내용이 보임*/
+}
