@@ -1,0 +1,38 @@
+/* scroll-snap 속성 */
+/* scroll-snap-type은 부모 요소에 스크롤 스냅할 방향(x | y | both)과 방식(proximity | mandatory)을 설정 */
+/* proximity: 스냅할 위치에 가까울 때 스냅 */
+/* mandatory: 항상 가까운 방향으로 스냅 */
+/* scroll-snap-align: 자식 요소에 스크롤 스냅될 기준선을 지정 */
+.result {
+  padding: 0;
+}
+._0 {
+  height: 100vh;
+  overflow-y: scroll;
+  /* both mmandatory는 가깝지 않아도 무조건 기준선으로 감 */
+  scroll-snap-type: y mandatory;
+}
+section div {
+  height: 80vh;
+  scroll-snap-align: start;
+}
+._1,
+._6 {
+  background-color: cornflowerblue;
+}
+._2,
+._7 {
+  background-color: olivedrab;
+}
+._3,
+._8 {
+  background-color: deeppink;
+}
+._4,
+._9 {
+  background-color: goldenrod;
+}
+._5,
+._10 {
+  background-color: darkorchid;
+}

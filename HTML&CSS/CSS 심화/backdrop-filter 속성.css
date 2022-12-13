@@ -1,0 +1,41 @@
+/* backdrop-filter 속성 */
+/* 적용된 요소의 영역만큼, 그 뒤에 있는 요소에 필터를 적용 */
+/* -webkit- 벤터 프리픽스와 함께 사용할 것 */
+.result {
+  padding: 0;
+}
+#bg {
+  display: flex;
+  height: 100vh;
+  background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+#filter {
+  width: 50%;
+  height: 50%;
+  border: 4px dashed rgba(255, 255, 255, 0.67);
+  border-radius: 16px;
+  /*
+  backdrop-filter는
+    blur(12px)',
+    'brightness(50%)',
+    'brightness(200%)',
+    'contrast(50%)',
+    'contrast(200%)',
+    'saturate(0%)',
+    'saturate(50%)',
+    'saturate(200%)',
+    'grayscale(50%)',
+    'grayscale(100%)',
+    'invert(100%)',
+    'invert(50%)',
+    'invert(75%)',
+    'sepia(33%)',
+    'sepia(100%) 
+    등의 효과들이 있다.
+    */
+  backdrop-filter: blur(50px);
+}

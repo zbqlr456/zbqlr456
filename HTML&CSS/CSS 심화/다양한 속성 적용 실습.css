@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+#container > div {
+  display: flex;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+#container > div > div {
+  display: flex;
+  width: 67%;
+  height: 67%;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+.img_1 {
+  background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/01.jpg);
+}
+.img_2 {
+  background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/02.jpg);
+}
+.img_3 {
+  background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/03.jpg);
+}
+.img_4 {
+  background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/04.jpg);
+}
+
+@media (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: row;
+    aspect-ratio: 1;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  #container > div {
+    aspect-ratio: 1;
+    scroll-snap-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  #container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  #container > div {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+}
+
+/* 필터 적용 */
+.img_1 > div {
+  /* webkit(벤터 프리픽스) 붙여주기 */
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+.img_2 > div {
+  -webkit-backdrop-filter: contrast(500%);
+  backdrop-filter: contrast(500%);
+}
+.img_3 > div {
+  -webkit-backdrop-filter: sepia(100%);
+  backdrop-filter: sepia(100%);
+}
+.img_4 > div {
+  -webkit-backdrop-filter: saturate(0%);
+  backdrop-filter: saturate(0%);
+}

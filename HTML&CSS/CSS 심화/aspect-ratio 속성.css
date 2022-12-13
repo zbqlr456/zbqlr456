@@ -1,0 +1,15 @@
+/* aspect-ratio 속성 */
+/* 박스 요소의 가로 세로 비율을 지정 */
+.result div {
+  padding: 1em;
+  color: white;
+  aspect-ratio: 0.8;
+}
+.blue {
+  width: 300px;
+  background-color: cornflowerblue;
+}
+.red {
+  height: 300px;
+  background-color: tomato;
+}
